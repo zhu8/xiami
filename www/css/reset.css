@@ -28,7 +28,6 @@ td {
 	padding: 0;
 }
 
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -84,12 +83,25 @@ acronym {
 	font-variant: normal;
 }
 
+button,
 input,
 textarea,
-button,
 select {
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
 	*font-size: 100%;
+}
+
+button,
+input,
+select {
+	vertical-align: middle;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+	cursor:pointer;
 }
