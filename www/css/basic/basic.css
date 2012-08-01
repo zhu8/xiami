@@ -1,0 +1,138 @@
+input[type=radio],input[type=checkbox] {
+    cursor:pointer;
+    vertical-align:middle;
+}
+body {
+    color:#333;
+    font:12px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:#fff;
+    text-align:left;
+}
+button,input,select,textarea {
+    font:12px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+a {
+    color:#36c;
+    cursor:pointer;
+    text-decoration:none;
+}
+a:hover,a:focus {
+    color:#36c;
+    text-decoration:underline;
+}
+a:link {
+    -webkit-tap-highlight-color:#fe9600;
+}
+body {
+    background:#fff;
+    height:100%;
+}
+::-moz-focus-inner {
+    border:none;
+    padding:0;
+}
+*:active {
+    outline:none;
+}
+.hidden {
+    display:none!important;
+    visibility:hidden!important;
+}
+.invisible {
+    visibility:hidden;
+    z-index:-999;
+}
+
+/*clearfix*/
+.clearfix:before,.clearfix:after,.item:before,.item:after {
+    content:"\0020";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+.clearfix:after,.item:after {
+    clear:both;
+}
+.clearfix,.item {
+    zoom:1;
+}
+
+.text {font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif!important;}
+.fYHei {font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,Georgia;}
+
+.key_red{
+    color:red;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ti {
+    text-indent:-9999px;
+}
+.noime {
+    ime-mode:disabled;
+}
+.vam,.vam * {
+    vertical-align:middle;
+}
+.vatb,.vatb * {
+    vertical-align:text-bottom;
+}
+.f12 {
+    font-size:12px;
+}
+.f13 {
+    font-size:13px;
+}
+.f14 {
+    font-size:14px;
+}
+.txt_input {
+    -moz-box-shadow:inset 0 1px 1px #dedede;
+    -o-box-shadow:inset 0 2px 2px #dedede;
+    -webkit-box-shadow:inset 0 1px 1px #dedede;
+    background:#fff;
+    border:1px solid #ccc;
+    box-shadow:inset 0 2px 2px #dedede;
+    color:#777;
+    cursor:text;
+    font-size:12px;
+    padding:4px 5px;
+}
+.txt_input:focus {
+    border:1px solid #f90;
+    color:#333!important;
+}
+.r3px {
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.r5px {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.r10px {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+.round {
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    border-radius:30px;
+}
+.minor {
+    color:#999;
+    font-size:12px!important;
+}
+a.minor,.minor a {
+    color:#8ca6d7;
+}
+.gray,.gray * {
+    color:#999;
+}
