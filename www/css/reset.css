@@ -47,9 +47,15 @@ em,
 strong,
 i,
 b,
-var {
-	font-style: inherit;
+var,
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
 	font-weight: inherit;
+	*font-size: 100%;
 }
 
 li {
@@ -64,16 +70,6 @@ h5,
 h6 {
 	font-size: 100%;
 	font-weight: normal;
-}
-
-button,
-input,
-textarea,
-select {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	*font-size: 100%;
 }
 
 button,
