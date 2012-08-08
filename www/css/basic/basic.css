@@ -144,12 +144,31 @@ a.minor,.minor a {
 .gray,.gray * {
     color:#999;
 }
+hr.sep {
+    border:0;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    border-top:1px solid rgba(0,0,0,0.1);
+    clear:both;
+    filter:alpha(opacity=30);
+    height:0;
+    margin:15px 0;
+}
+hr.d {
+    border:none;
+    border-top:1px dashed #e5e5e5;
+    clear:both;
+    height:0;
+    margin:15px 0;
+}
 hr.null {
-	border:none;
-	border-top:1px solid transparent;
-	clear:both;
-	height:0;
-	margin:15px 0;
+    border:none;
+    border-top:1px solid transparent;
+    clear:both;
+    height:0;
+    margin:15px 0;
+}
+hr.null10 {
+    margin:10px 0;
 }
 .mgt10 {
     margin-top: 10px;
