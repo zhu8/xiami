@@ -1,0 +1,140 @@
+/*Style for POP dialog layout*/
+.jqmOverlay {
+    background-color: #000
+}
+.dialog_c1 {
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    margin-left: -247px;
+    width: 495px;
+    display: none;
+}
+.jqDrag {
+    position: absolute;
+    z-index: 4;
+    top: 0px;
+    left: 0px;
+    height: 32px;
+    width: 96%;
+    cursor: move;
+}
+.dialog_sharp {
+    width: 495px;
+    height: 100%;
+}
+
+/*POP UP*/
+#dialog_clt {
+    text-align: left
+}
+.dialog_popup {
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    margin-left: -247px;
+    z-index: 99999;
+    width: 495px;
+    display: none;
+}
+* html .dialog_popup {
+    position: absolute;
+    top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+.dialog_sharp {
+    background: #000;
+    padding: 7px;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.50;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: -7px;
+}
+.dialog_main {
+    background: #fafafa;
+    position: relative;
+    z-index: 3;
+}
+.dialog_main h3 {
+    font-size: 14px;
+    color: #fff;
+    background: #FFA95E;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    border: 1px #555 solid;
+    border-bottom: none;
+}
+.dialog_content {
+    padding: 10px;
+    border: 1px #555 solid;
+    border-top: none;
+}
+.dialog_content p.loading {
+    color: #333;
+    font-size: 12px;
+    background: url(http://img.xiami.com/res/img/default/loading.gif) 0 3px no-repeat;
+    padding-left: 22px;
+    line-height: 2;
+}
+.dialog_content .dlg_tabs ul {
+    font-size: 12px;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    top: 2px;
+}
+.dialog_content .dlg_tabs ul li,
+.dialog_content .dlg_tabs_digg ul li {
+    color: #333;
+    *display: inline;
+    float: left;
+    margin-right: 5px;
+    padding: 6px;
+    *zoom: 1;
+}
+.dialog_content .dlg_tabs ul li a,
+.dialog_content .dlg_tabs_digg ul li a {
+    text-decoration: underline
+}
+.dialog_content .dlg_tabs ul li a.current {
+    background: #fff;
+    border: 1px #ddd solid;
+    border-bottom: none;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 7px;
+}
+.dialog_content .dlg_tabs ul li a:hover {
+    text-decoration: none
+}
+.dialog_acts {
+    background: #eee;
+    border: 1px #555 solid;
+    border-top: 1px #ccc solid;
+    margin-top: -1px;
+    padding: 8px;
+    text-align: right;
+}
+.dialog_acts input {
+    font-size: 12px
+}
+.dialog_main p.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.dialog_main p.close a {
+    display: block;
+    overflow: hidden;
+    width: 13px;
+    height: 13px;
+    background: url(http://img.xiami.com/res/img/default/close2.gif) 0 0 no-repeat;
+    text-indent: -999em;
+}
+.dialog_main p.close a:hover {
+    background-position: 0 -13px
+}
