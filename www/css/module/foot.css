@@ -171,3 +171,21 @@ sup.wow {
 .footer_copyright {
 	margin-top:15px;
 }
+
+/*go to top `button`*/
+#gotop {
+    position: fixed;
+    text-indent: -9999px;
+    _position: absolute;
+    z-index: 9999999999;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background: url(/res/v3/img/gotop.png) no-repeat;
+}
+#gotop:hover{
+    background: url(/res/v3/img/gotop.png) no-repeat 0 -50px;
+}
+.t_hide{display:none;}
+.t_show{display:block;}

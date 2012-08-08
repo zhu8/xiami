@@ -13,15 +13,21 @@
 </head>
 
 <body>
+<div id="hidden_obj">
+    <embed src="/res/player/sdtos.swf" width="1" height="1" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent" name="trans">
+</div>
+<div id="xiami-content"><h1>虾米网(xiami.com) - 高品质音乐互动社区</h1></div>
 <div id="n_header"> 
     <!--usr-->
     <div id="n_header_line">
-        <div class="n_header_inner"> <a title="虾米音乐网(xiami.com) - 高品质音乐 发现 分享" href="/" class="logo">虾米音乐网(xiami.com) - 高品质音乐 发现 分享</a>
+        <div class="n_header_inner"> 
+            <a title="虾米音乐网(xiami.com) - 高品质音乐 发现 分享" href="/" class="logo">虾米音乐网(xiami.com) - 高品质音乐 发现 分享</a>
             <form action="/search" method="get" role="search" id="search_box">
-                <input type="text" autocomplete="off" id="search_query" name="key" value="音乐搜索，找人..." title="音乐搜索，找人..." onblur="searchBlur();" onclick="searchFocus();">
+                <input type="text" autocomplete="off" x-webkit-speech x-webkit-grammar="builtin:translate" id="search_query" name="key" value="音乐搜索，找人..." title="音乐搜索，找人..." onblur="searchBlur();" onclick="searchFocus();">
                 <input type="submit" id="search_btn" class="" title="搜索" value="">
                 <input type="hidden" value="1" name="pos">
             </form>
+
             <div id="auto_complete" class="old hidden">
                 <p class="auto_complete_tip">热门建议</p>
                 <table cellspacing="0" cellpadding="0" border="0">
@@ -118,8 +124,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <!--#auto_complete::E-->
+            </div><!--#auto_complete::E-->
+
             <div id="xUser_info">
                 <div class="xUser_logged">
                     <ul class="xUser_tabs clearfix">
@@ -127,14 +133,15 @@
                         <li><a class="uico_collect" href="/space/collect/u/897685" title="我的精选集"><i>我的精选集</i></a></li>
                         <li><a class="uico_home" href="/u/897685" title="我的个人主页(A)"><img class="r3px" src="http://img.xiami.com/./images/avatar_new/17/95/897685/897685_1313473319_1.jpg" width="16" height="16" alt="我的个人主页(A)"></a></li>
                         <li class="u_more PxRlt"><a class="uico_more" href="javascript:void(0);" title="更多"><i>更多</i></a>
-                            <div class="more_drop">
+                            <div class="more_drop hidden">
                                 <div class="more_dropInn"> <a href="/space/following/u/897685">关注/粉丝</a> <a href="/property/myproperties">我的道具</a> <a href="/account">账户</a> <a href="/share">设置</a> <a href="/member/logout">退出</a> </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!--#xUser_info::E--> 
+            <!--#xUser_info::E-->
+
         </div>
     </div>
 
@@ -179,31 +186,67 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div><!--#n_header_channel::E-->
+
         <div id="n_header_logined">
             <div class="g-login">
                 <ul>
-                    <li class="pmicon"> <a id="notify_button" class="popup_trigger" title="提醒" href="javascript:;">提醒</a></li>
+                    <li class="pmicon"><a id="notify_button" class="popup_trigger unfold" title="提醒" href="javascript:;">提醒</a></li>
                     <li class="narrow">-</li>
                     <li class="recent"><a id="recent_button" class="popup_trigger" href="/space/charts-recent/u/897685">最近播放</a></li>
                 </ul>
-                <div id="recent_history" class="header_popup r3px hidden">
-                    <div class="recent_inner"></div>
-                </div>
-                <div id="notifications" class="header_popup r3px hidden">
+
+                <div id="recent_history" class="header_popup r3px">
+                    <div class="recent_inner">
+                        <ul class="clearfix">
+                            <li class="sections">
+                                <h4>最近在听 (<a href="/member/edit-player">播放设置</a>)</h4>
+                                <ol class="clearfix">
+                                    <li><a href="/song/3484271">多余的解释 - 许嵩</a></li>
+                                    <li><a href="/space/charts-recent/u/897685" target="_blank" class="gray">更多...</a></li>
+                                </ol>
+                            </li>
+                            <li class="sections last">
+                                <h4>最近播放的电台</h4>
+                                <ol class="clearfix">
+                                    <li><a href="/radio/play/id/2">虾米猜 电台</a></li>
+                                    <li><a href="/radio/play/id/108665">陈升 电台</a></li>
+                                    <li><a href="/radio/play/id/120773">Courtney Love 电台</a></li>
+                                    <li><a href="/radio/play/id/424408">gindis 电台</a></li>
+                                    <li><a href="/radio/play/id/3">新歌 电台</a></li>
+                                    <li><a href="/radio/play/id/582411">摇滚 电台</a></li>
+                                    <li><a href="/radio/play/id/111573">野見祐二 电台</a></li>
+                                    <li><a href="/radio/play/id/103794">侃侃 电台</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <p class="clearfix mgt20">
+                            <a class="bt_play" href="javascript:void(0);" title="" onclick="addSongs('/song/playlist-default');"><span>继续播放</span></a>
+                        </p>
+                    </div>
+                </div><!--#recent_history::E-->
+
+                <div id="notifications" class="header_popup r3px hidden"> 
                     <div class="recent_inner">
                         <ol class="clearfix">
-                            <li class="icon_notify first"> <a href="/member/mypm-notice">通知 </a> </li>
-                            <li class="icon_dm"><a href="/member/mypm">站内信 </a></li>
-                            <li class="icon_request"><a href="/member/request#reqs_friends">请求 </a></li>
-                            <li class="icon_fo"> <a href="/space/fans">关注</a> </li>
-                        </ol>
-                        <p class="clearfix mgt10"> <a class="bt_choose" href="javascript:void(0);"><span>我知道了</span></a> </p>
+                            <li class="icon_notify first">
+                                <a href="/member/mypm-notice">通知</a>
+                            </li>
+                            <li class="icon_dm"><a href="/member/mypm">站内信</a></li>
+                            <li class="icon_request"><a href="/member/request#reqs_friends">请求</a></li>
+                            <li class="icon_fo"><a href="/space/fans">关注</a></li>
+                        </ol>  
+                        <p class="clearfix mgt10">
+                        <a class="bt_choose" href="javascript:void(0);"><span>我知道了</span></a>
+                        </p> 
                     </div>
-                </div>
+                </div><!--#notifications::E-->
+
             </div>
-        </div>
+        </div><!--#n_header_logined::E-->
+
     </div>
+
     <!--shine-->
     <div class="nh_shine">&nbsp;</div>
 </div>
