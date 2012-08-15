@@ -10,11 +10,14 @@
 <link rel="stylesheet" href="../www/css/reset.css" type="text/css" />
 <link rel="stylesheet" href="../www/css/basic/basic.css" type="text/css" />
 <link rel="stylesheet" href="../www/css/module/head.css" type="text/css" />
+<!-- <script src="../www/js/lib/jquery.js?v=1.7.2"></script>
+<script src="../www/js/module/head.js"></script> -->
+<script src="../www/js/lib/sea.js" data-main="../www/js/init.js"></script>
 </head>
 
 <body>
 <div id="hidden_obj">
-    <embed src="/res/player/sdtos.swf" width="1" height="1" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent" name="trans">
+    
 </div>
 <div id="xiami-content"><h1>虾米网(xiami.com) - 高品质音乐互动社区</h1></div>
 <div id="n_header"> 
@@ -150,38 +153,38 @@
         <div id="n_header_channel">
             <ul class="clearfix">
                 <li class="current" id="nh_index"><a title="首页" href="/" class="cname">首页</a></li>
-                <li class="nh_sys_menu current nh_selected" id="nh_music"><a href="/music" class="cname">发现音乐</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div style="display: block; " class="nhsys_menu">
+                <li class="nh_sys_menu" id="nh_music"><a href="/music" class="cname">发现音乐</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="排行榜" href="/music/hot">排行榜</a> <a title="音乐风格" href="/music/style">音乐风格</a> <a title="分类试听" href="/music/category">分类试听</a> <a title="新碟" href="/music/newalbum">新碟</a> <a title="虾米猜" href="/artist/recommended">虾米猜</a> <a title="专题" href="/events">专题</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_collect"><a href="/collect" class="cname">精选集</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="精选集概览" href="/collect">精选集概览</a> <a title="原创精选集" href="/collect/orinew">原创精选集</a> <a title="求助精选集" href="/collect/helpnew">求助精选集</a> <a title="主题精选集" href="/collect/sub">主题精选集</a> <a title="我的精选集" href="/space/collect/u/897685" class="lines">我的精选集</a> <a title="我收藏的精选集" href="/space/collect-fav/u/897685">我收藏的精选集</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_radio"><a target="_blank" href="/radio" class="cname">电台</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="电台概览" href="/radio">电台概览</a> <a title="热门电台" href="/radio/hot">热门电台</a> <a title="电台实验室" href="/radio/labs">电台实验室</a> <a title="我收藏的电台" href="/space/radio-fav/u/897685" class="lines">我收藏的电台</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_group"><a href="/group" class="cname">小组</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="小组概览" href="/group?toindex=1">小组概览</a> <a title="热门话题" href="/group/hot">热门话题</a> <a title="更多小组" href="/group/more">更多小组</a> <a title="我参加的小组" href="/space/group/u/897685" class="lines">我参加的小组</a> <a title="我参与的话题" href="/space/group-thread/u/897685">我参与的话题</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_group"><a href="http://loop.xiami.com" class="cname loop">Loop</a><sup class="wow"></sup><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="Loop首页" href="http://loop.xiami.com">Loop首页</a> <a title="随机场地" href="http://loop.xiami.com/loop/rnd">随机场地</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_events"><a href="/events" class="cname">专题</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="音乐专题" href="/events#Mevent">音乐专题</a> <a title="演出/活动" href="/events#Mperform">演出/活动</a> </div>
                     </div>
                 </li>
                 <li class="nh_sys_menu" id="nh_software"><a href="/software" class="cname">软件</a><span><a href="javascript:;" class="show_nhsysMenu">显示菜单</a></span>
-                    <div class="nhsys_menu hidden">
+                    <div class="nhsys_menu">
                         <div class="nhsys_menu_inner"> <a title="手机客户端" href="/software/android?rel=channel_sub">手机客户端</a> <a title="虾歌" href="/software/shark">虾歌</a> <a title="播放记录插件" href="/software/xiamifm">播放记录插件</a> <a style="position:relative;" title="百宝箱" href="/xbox">百宝箱<img src="http://img.xiami.com/res/v3/img/new_ico.gif"></a> <a title="虾米电台 Lite" href="/software/xiamiair">虾米电台 Lite</a> </div>
                     </div>
                 </li>
@@ -191,7 +194,7 @@
         <div id="n_header_logined">
             <div class="g-login">
                 <ul>
-                    <li class="pmicon"><a id="notify_button" class="popup_trigger unfold" title="提醒" href="javascript:;">提醒</a></li>
+                    <li class="pmicon"><a id="notify_button" class="popup_trigger" title="提醒" href="javascript:;">提醒</a></li>
                     <li class="narrow">-</li>
                     <li class="recent"><a id="recent_button" class="popup_trigger" href="/space/charts-recent/u/897685">最近播放</a></li>
                 </ul>
@@ -226,7 +229,7 @@
                     </div>
                 </div><!--#recent_history::E-->
 
-                <div id="notifications" class="header_popup r3px"> 
+                <div id="notifications" class="header_popup r3px hidden"> 
                     <div class="recent_inner">
                         <ol class="clearfix">
                             <li class="icon_notify first">

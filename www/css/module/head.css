@@ -171,6 +171,7 @@
     background:#ccc;
     margin-left:0;
     margin-top:0;
+    display: none;
 }
 #n_header_channel .nhsys_menu_inner {
     padding:5px 5px 8px 5px;
