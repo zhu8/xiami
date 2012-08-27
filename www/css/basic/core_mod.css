@@ -4,13 +4,18 @@
     float:left;
     height:26px;
     line-height:26px;
-    margin-left:20px;
     margin-top:7px;
     width:292px;
     overflow:hidden;
     position:relative;
+    left: 20px;
     padding:2px 0 0;
 }
+* html #search_box { background-image:url("http://img.xiami.com/res/v3/img/search_box.png"); }
+* html #search_btn { background-image:url("http://img.xiami.com/res/v3/img/search_normal.png"); }
+* html form .typing { background-image:url("http://img.xiami.com/res/v3/img/typing.png") !important;}
+* html form .loading { background-image:url("http://img.xiami.com/res/v3/img/search_loading.gif") !important;}
+
 .highlight {
     background-position:0 -28px!important;
 }

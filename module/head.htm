@@ -1,7 +1,12 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-CN"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <title>head module</title>
 <meta name="keyword" content="" />
 <meta name="description" content="" />
@@ -25,9 +30,9 @@
     <div id="n_header_line">
         <div class="n_header_inner"> 
             <a title="虾米音乐网(xiami.com) - 高品质音乐 发现 分享" href="/" class="logo">虾米音乐网(xiami.com) - 高品质音乐 发现 分享</a>
-            <form action="/search" method="get" role="search" id="search_box">
+            <form action="/search" method="get" role="search" id="search_box" class="highlight">
                 <input type="text" autocomplete="off" x-webkit-speech x-webkit-grammar="builtin:translate" id="search_query" name="key" value="音乐搜索，找人..." title="音乐搜索，找人..." onblur="searchBlur();" onclick="searchFocus();">
-                <input type="submit" id="search_btn" class="" title="搜索" value="">
+                <input type="submit" id="search_btn" class="typing" title="搜索" value="">
                 <input type="hidden" value="1" name="pos">
             </form>
 
