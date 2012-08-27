@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh-CN"><!--<![endif]-->
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
@@ -19,13 +24,14 @@
             <h1>
                 <a rel="home" title="虾米音乐网(xiami.com) - 高品质音乐 发现 分享" href="/">虾米音乐网(xiami.com) - 高品质音乐 发现 分享</a>
             </h1>
-            <form id="search" role="search" method="get" action="/search"> 
+            <form id="search" role="search" method="get" class="highlight" action="/search"> 
                 <input type="text" onclick="searchFocus();" x-webkit-speech x-webkit-grammar="builtin:translate" onblur="searchBlur();" title="音乐搜索，找人..." value="音乐搜索，找人..." name="key" id="search_query" autocomplete="off">
-                <input type="submit" value="" title="搜索" class="" id="search_btn">
+                <input type="submit" value="" title="搜索" class="typing" id="search_btn">
                 <input type="hidden" value="1" name="pos">
             </form>
-            <div id="auto_complete" class="hidden"></div>
-      
+            
+            <div id="auto_complete" class="hidden"></div><!--#auto_complete::end-->
+            
             <ul id="top_nav" class="text">
                 <li><a title="发现音乐" href="/music">发现音乐</a></li>
                 <li><a title="精选集" href="/collect">精选集</a></li>

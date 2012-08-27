@@ -74,6 +74,10 @@
     background-position:0 -40px;
 }
 
+.highlight {
+    background-position:0 -28px!important;
+}
+
 /*web navigation*/
 .n_header_sys {
     width:978px;

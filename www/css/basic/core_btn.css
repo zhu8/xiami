@@ -34,6 +34,37 @@
     box-shadow:1px 1px 5px rgba(0,0,0,0.5) inset;
 }
 
+.ie .blue_btn4,.ie8 .blue_btn4 {
+    background:url("/res/v3/img/blue_btn_ie.gif") repeat scroll 0 -37px #e3e6e6;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    width:83px;
+    padding:0;
+    border:none;
+}
+.ie8 .blue_btn4:active {
+    background-position:1px -36px;
+}
+.ie .blue_btn2,.ie8 .blue_btn2 {
+    background:url("/res/v3/img/blue_btn_ie.gif") repeat scroll -8px 0 #e3e6e6;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    width:66px;
+    padding:0;
+    border:none;
+}
+.ie8 .blue_btn2:active {
+    background-position:-7px 1px;
+}
+
 /*bt_play button*/
 a.bt_play {
     color:#333!important;

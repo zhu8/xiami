@@ -57,7 +57,7 @@ a:link{
 }
 .clearfix,
 .item {
-    zoom:1;
+    zoom:1; /*fixed*/
 }
 
 .key_red{
@@ -167,4 +167,8 @@ hr.null10 {
 }
 .mgt25 {
 	margin-top:25px;
+}
+
+.ie hr.d{
+    margin:5px 0;
 }
