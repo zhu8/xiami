@@ -1,6 +1,3 @@
-@import url('../basic/core_mod.css');
-@import url('../basic/core_btn.css');
-
 #wrapper {
     background:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAWgAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQIBAQECAgIBAQICAgICAgICAgMCAwMDAwIDAwQEBAQEAwUFBQUFBQcHBwcHCAgICAgICAgICAEBAQECAgIFAwMFBwUEBQcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI/8AAEQgBuAABAwERAAIRAQMRAf/EAHcAAQADAQEBAQAAAAAAAAAAAAABAgMEBwgKAQEBAQADAQAAAAAAAAAAAAAAAgEDCAoJEAEAAQICCAcAAAAAAAAAAAAAARESUWGRAlIDE9MEBaGTFVVXCBgRAQACAQIHAAAAAAAAAAAAAAABERIDBpHR4ZJUVRj/2gAMAwEAAhEDEQA/APph5aHpMAAQCQAZ8Xd7UKwlOUPYfx39s/hHvOjpuc7K/MO+fX63b1ddvpDZfnaXGeT9BF+vtTpl6A3w2VABrZALgA3pGEAVKTk7fSO9+zb7zej5wVD1JqWnDzBoDTh5g0BeyQXujEbSlJwli3ZSMGuO0gtZrYA2BFZwnwBFZai0DAAAAEgtbkKqGtBNgAAOgAAAAAGynGAAAAyvkFAf/9k=) repeat-x scroll 0 0 #f0f5f5;
     border-bottom:1px solid #d9dede;
@@ -224,7 +221,7 @@ a#login_more span {
 }
 
 /*ie fixed*/
-.ie6 #head_wrap{width:auto!important;overflow:hidden}
-.ie #wrapper{background-image:url(http://img.xiami.com/res/v3/img/bg_x.jpg)}
-.ie #header{z-index:2;}
-.ie ul#top_member a#top_login{background-image:url(http://img.xiami.com/res/v3/img/login_btns.png)}
+*html #head_wrap{width:auto!important;overflow:hidden}
+*html #wrapper{background-image:url(http://img.xiami.com/res/v3/img/bg_x.jpg)}
+*html #header{z-index:2;}
+*html ul#top_member a#top_login{background-image:url(http://img.xiami.com/res/v3/img/login_btns.png)}
