@@ -1,0 +1,506 @@
+#hidden_obj {
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:99;
+}
+#xiami-content h1 {
+    width:0;
+    height:0;
+    display:block;
+    overflow:hidden;
+    font-size:0;
+}
+#web_loading {
+    position:fixed;
+    z-index:99;
+    background:#f00;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    padding:3px;
+    width:60px;
+    right:0;
+    top:0;
+}
+*html #web_loading {
+    position: absolute;
+}
+/*header layout*/
+#n_header {
+    background:url("http://img.xiami.com/res/img/default/n_head.png") repeat-x scroll 0 0;
+    height:100px;
+    width:100%;
+    position:relative;
+    z-index:90;
+    text-align:left;
+}
+#n_header .nh_shine {
+    background:url(http://img.xiami.com/res/img/default/p_head_inner.gif) 0 0 no-repeat;
+    width:439px;
+    height:4px;
+    display:block;
+    overflow:hidden;
+    text-indent:-9999em;
+    position:absolute;
+    right:0;
+    bottom:7px;
+}
+#n_header_line {
+    width:100%;
+    height:49px;
+    border-bottom:1px #d5d5d5 dashed;
+}
+#n_header_line .n_header_inner {
+    width:978px;
+    padding-top:4px;
+    margin:0 auto;
+    position:relative;
+    z-index:10;
+}
+.n_header_inner a.logo {
+    background:url(http://st.xiami.com/res/v3/img/logo.gif) 0 0 no-repeat;
+    display:block;
+    overflow:hidden;
+    width:180px;
+    height:40px;
+    text-indent:-999em;
+    float:left;
+}
+.n_header_inner a.logo:hover {
+    background-position:0 -40px;
+}
+
+.highlight {
+    background-position:0 -28px!important;
+}
+
+/*web navigation*/
+.n_header_sys {
+    width:978px;
+    margin:0 auto;
+}
+#n_header_channel {
+    float:left;
+    width:725px;
+    margin-left:3px;
+    margin-top:4px;
+}
+#n_header_channel ul li {
+    float:left;
+    display:inline;
+    position:relative;
+    z-index:2;
+    margin-right:20px;
+    height:32px;
+    padding:5px 0 0 7px;
+    border-top:1px #ebebeb solid;
+}
+#n_header_channel ul li.current {
+    position:relative;
+    z-index:1;
+}
+#n_header_channel ul li.current a.cname {
+    color:#f50;
+    background:url(http://img.xiami.com/res/img/default/nh_current.png) left bottom no-repeat;
+}
+
+#n_header_channel ul li a.cname {
+    font-weight:bold;
+    color:#000;
+    font-size:14px;
+    font-family:Tahoma, Geneva, sans-serif;
+    line-height:1.231;
+    line-height:1.4\0;
+    margin-right:5px;
+    padding-bottom:14px;
+}
+#n_header_channel ul li a.loop{ 
+    position:relative\9; /*ie8*/
+    top:-1px\9; /*ie8*/
+}
+
+/*`*html`support ie6 fixed*/
+* html #n_header_channel { display: inline; }
+* html #n_header_channel { margin-top: 6px; }
+* html #n_header_channel ul li { height: 38px; }
+* html #n_header_channel ul li.current a.cname { color:#f50;background:url(http://img.xiami.com/res/img/default/nh_current_ie.gif) left bottom no-repeat;}
+* html #n_header_channel ul li a.cname { padding-bottom: 11px; }
+* html #n_header_channel ul li a.cname { zoom: 1;}
+/*ie7 fixed*/
+* html #n_header_channel ul li span {top: -15px;}
+*+html #n_header_channel ul li a.cname { padding-bottom:11px; }
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #n_header_channel ul li a.cname {
+        padding-bottom:14px;
+    }
+}
+#n_header_channel li.current a.cname:hover {
+    color:#f60;
+}
+#n_header_channel ul li span {
+    position:relative;
+    display:inline-block;
+    background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) 0 -80px no-repeat;
+    width:17px;
+    height:12px;
+    overflow:hidden;
+}
+#n_header_channel ul li a.show_nhsysMenu {
+    width:17px;
+    height:12px;
+    display:block;
+    text-indent:-9999em;
+}
+#n_header_channel ul li a.show_nhsysMenu:hover {
+    background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) -18px -80px no-repeat;
+}
+#n_header_channel ul li.nh_selected {
+    background:#fff;
+    border:1px #ddd solid;
+    border-bottom:none;
+    border-right:2px #a3a3a3 solid;
+}
+#n_header_channel ul li.nh_selected span a.show_nhsysMenu {
+    background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) -36px -80px no-repeat;
+}
+#n_header_channel .nhsys_menu {
+    width:130px;
+    position:absolute;
+    top:28px;
+    left:-1px;
+    background:#ccc;
+    margin-left:0;
+    margin-top:0;
+    display: none;
+}
+#n_header_channel .nhsys_menu_inner {
+    padding:5px 5px 8px 5px;
+    position:relative;
+    top:-1px;
+    background:#fff;
+    border-width:1px;
+    border-color:#fff #a3a3a3 #a3a3a3 #ddd;
+    border-style:solid;
+    border-top: 0\9;
+}
+*+html #n_header_channel .nhsys_menu_inner {
+    border-top: 0;
+}
+#n_header_channel .nhsys_menu a {
+    font-size:12px;
+    font-weight:normal;
+    color:#36c;
+    display:block;
+    line-height:1.5;
+    padding:4px 0 2px 5px;
+}
+#n_header_channel .nhsys_menu a:hover {
+    background:#8ca6d7;
+    color:#fff;
+    text-decoration:none;
+}
+#n_header_channel .nhsys_menu a.lines {
+    border-top:1px #eee solid;
+    padding-top:7px;
+    margin-top:4px;
+}
+#n_header_logined {
+    float:right;
+    margin:12px 3px 0 0;
+}
+#n_header_logined ul li {
+    display:inline;
+    float:left;
+}
+#n_header_logined a {
+    color:#99b2e5;
+}
+#n_header_logined a:hover {
+    color:#36c;
+}
+#n_header_logined ul li.pmicon a {
+    background-image:url(http://img.xiami.com/res/img/default/letter.gif) !important;
+    background-position:4px 8px !important;
+}
+#n_header_logined ul li.pmnew a {
+    color:#36c;
+    background-image:url(http://img.xiami.com/res/img/default/notice.gif) !important;
+}
+#n_header_logined ul li.narrow {
+    color:#bbb;
+    padding:0 5px;
+}
+
+* html #n_header_logined {
+    margin:15px 3px 0 0;
+}
+*+html #n_header_logined ul li.pmicon,*+html #n_header_logined ul li.recent {
+    position:relative;
+    top:-2px;
+}
+*+html #n_header_logined ul li.narrow {
+    color:#bbb;
+    padding:0 5px;
+    position:relative;
+    top:-1px;
+}
+
+/**/
+#n_header_logined {
+    position:relative;
+    z-index:1;
+}
+a.popup_trigger {
+    color:#36c;
+    background:url(http://img.xiami.com/res/v3/img/recentPlay.gif) no-repeat 3px 6px transparent;
+    padding:6px 6px 6px 24px;
+    display:block;
+    position:relative;
+    top:-7px;
+    border:1px solid #ededed
+}
+a.unfold {
+    background:url(http://img.xiami.com/res/v3/img/recentPlay.gif) no-repeat 3px 6px #fff !important;
+    border-right:1px solid #d4d4d4 !important;
+}
+.header_popup {
+    position:absolute;
+    width:410px;
+    min-height:165px;
+    border-right:1px solid #d4d4d4;
+    border-bottom:1px solid #d4d4d4;
+    background:#fff;
+    right:0;
+    top:20px;
+    z-index:9;
+}
+.header_popup .loading {
+    background:url("http://img.xiami.com/res/img/common/software/slider_load.gif") no-repeat scroll center center transparent;
+}
+.recent_inner {
+    width:388px;
+    min-height:144px;
+    padding:10px;
+    border-top:none;
+    background:#fff;
+}
+.recent_inner ul li.sections {
+    width:189px;
+    float:left;
+    margin:0 10px 0 0;
+    background:#fafafa;
+    overflow:hidden;
+}
+.recent_inner ul li.last {
+    margin:0;
+}
+.recent_inner ul h4 {
+    font-weight:normal;
+    color:#333;
+    height:26px;
+    line-height:26px;
+    padding:0 0 0 5px;
+    border-bottom:1px solid #e5e5e5;
+    background:#f5f5f5;
+}
+.recent_inner ol {
+    display:block;
+    padding:5px;
+}
+.recent_inner ol li {
+    padding:5px 0 5px 5px;
+    overflow:hidden;
+    width:170px;
+}
+.recent_inner ol a {
+    color:#666!important;
+    white-space:nowrap;
+}
+.recent_inner ol a.gray{
+    color: #99B2E5!important;
+}
+.recent_inner ol a.gray:hover{
+    color: #36C!important;
+}
+.recent_inner ol li.empty {
+    height:95px;
+    line-height:60px;
+    text-align:center;
+}
+.recent_inner ol li.empty a.bt_play {
+    margin:0 0 0 30px;
+}
+
+#n_header_channel sup.hot {
+    top:0;
+    right:-12px;
+}
+
+#n_header_channel sup.wow {
+    top:-4px;
+    right:-6px;
+    z-index:2;
+}
+#notifications {
+    width:210px;
+}
+#notifications .recent_inner {
+    width:188px;
+}
+#notifications ol {
+    padding:0;
+}
+#notifications li {
+    padding:0;
+    width:100%;
+}
+#notifications li a {
+    display:block;
+    padding:8px 10px 8px 25px;
+    line-height: 14px;
+    color:#666;
+    background-color:#FBFBFB;
+    border-top:1px solid #FEFEFE;
+    border-bottom:1px solid #F2F2F2;
+    text-decoration:none;
+    background-repeat:no-repeat;
+    background-image:url(http://img.xiami.com/res/v3/img/notify_icons.gif);
+    position: relative;
+}
+#notifications li span {
+    position: absolute;
+    right: 5px;
+    color:#F60;
+    font-weight:bold;
+    text-decoration:none;
+}
+#notifications li a:hover {
+    background-color:#fff;
+}
+#notifications,#notifications .recent_inner {
+    min-height:0;
+}
+#notifications a.bt_choose {
+    color:#666 !important;
+}
+#notifications li.icon_notify a {
+    background-position:5px 8px;
+}
+#notifications li.icon_dm a {
+    background-position:5px -77px;
+}
+#notifications li.icon_request a {
+    background-position: 5px -35px;
+}
+#notifications li.icon_fo a{background-position: 5px -119px;}
+
+#n_header_logined a.storeIcon{ background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) 0 -112px no-repeat;   padding-left:18px;}
+
+/*ie6`7 fixed*/
+*+html .header_popup { top: 18px; }
+* html #n_header_logined a.storeIcon{ position:relative; top:-1px; background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) 0 -112px no-repeat;}
+*+html #n_header_logined a.storeIcon{ position:relative; top:-3px; background:url(http://img.xiami.com/res/img/default/bg_sprit4.gif) 0 -113px no-repeat;}
+
+
+/*xUser_info*/
+#xUser_info{ float:left; position:absolute; top:9px; right:0;}
+#xUser_info .xUser_unlog{ margin-top:9px;}
+.xUser_unlog span{ border-left:1px #cacaca dotted; padding-left:11px; margin-left:11px;}
+.xUser_unlog span.log_orginal{ border-left:none;}
+.xUser_unlog span.log_orginal em{ color:#999; font-style:normal; padding:0 8px;}
+.xUser_unlog a.log_icons{ padding:0 0 1px 20px;vertical-align:top;}
+
+a.log_weibo{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 0 no-repeat;}
+a.log_tencent{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -416px no-repeat;}
+a.log_renren{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -64px no-repeat;}
+a.log_msn{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -224px no-repeat;}
+a.log_alipay{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -384px no-repeat;}
+a.log_sdo{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -320px no-repeat;}
+
+/*ie6 fixed*/
+*html #xUser_info {width:320px;}
+*html .xUser_unlog span{height:16px;display:inline-block;}
+*html .xUser_logged{margin-left:169px;}
+
+.xUser_unlog a.log_more{ background:url(http://img.xiami.com/res/img/default/nico_sprite.gif) right -32px no-repeat; padding-right:14px;}
+
+.xUser_unlog .unlog_drop{ position:absolute; top:25px; right:0; background:#fff; border-right:1px #ADADAD solid;border-bottom:1px #ADADAD solid;}
+.xUser_unlog .unlog_dropInn{ background:#fff; border:1px #ddd solid; padding:0 8px; width:130px;}
+.xUser_unlog .unlog_dropInn a{ display:block;white-space:normal; margin:15px 0;}
+
+
+ul.xUser_tabs a.uico_lbry{ background:url(http://img.xiami.com/res/img/default/user_infobg.gif) 0 0 no-repeat; width:26px; height:23px; display:block; overflow:hidden; padding:10px 0 0 11px;}
+ul.xUser_tabs a.uico_collect{ background:url(http://img.xiami.com/res/img/default/user_infobg.gif) -37px 0 no-repeat; width:26px; height:23px; display:block; overflow:hidden; padding:10px 0 0 10px;}
+ul.xUser_tabs a.uico_home{background:url(http://img.xiami.com/res/img/default/user_infobg.gif) -73px 0 no-repeat; width:26px; height:25px; display:block; overflow:hidden; padding:8px 0 0 10px;}
+ul.xUser_tabs a.uico_more{background:url(http://img.xiami.com/res/img/default/user_infobg.gif) -109px 0 no-repeat; width:34px; height:28px; display:block; overflow:hidden; padding:5px 0 0 8px;}
+
+ul.xUser_tabs a.uico_lbry:hover{ background-position:0 -33px;}
+ul.xUser_tabs a.uico_collect:hover{ background-position:-37px -33px;}
+ul.xUser_tabs a.uico_home:hover{ background-position:-73px -33px;}
+
+ul.xUser_tabs li.u_more a.hoveron i{background:url(http://img.xiami.com/res/v3/img/icon_sprite.png) -185px -21px no-repeat; width:21px; height:21px;}
+ul.xUser_tabs li.u_more a.clickon i{ background-position:-185px -42px;}
+
+ul.xUser_tabs i{ display:block; overflow:hidden; text-indent:-999em;}
+
+a.uico_lbry i{ background:url(http://img.xiami.com/res/img/default/nico_sprite.gif) 0 -130px no-repeat; width:16px; height:16px;}
+a.uico_collect i{ background:url(http://img.xiami.com/res/img/default/nico_sprite.gif) 0 -194px no-repeat; width:16px; height:16px;}
+a.uico_more i{ background:url(http://img.xiami.com/res/v3/img/icon_sprite.png) -185px 0 no-repeat; width:21px; height:21px;}
+
+a.uico_lbry:hover i,ul.xUser_tabs li.current a.uico_lbry i{ background-position:0 -162px;}
+a.uico_collect:hover i,ul.xUser_tabs li.current a.uico_collect i{ background-position:0 -226px;}
+
+ul.xUser_tabs li{ float:left; display:inline;}
+
+ul.xUser_tabs li.current a.uico_lbry{background:url(http://img.xiami.com/res/img/default/user_infobg.gif) 0 -66px no-repeat;}
+ul.xUser_tabs li.current a.uico_collect{background:url(http://img.xiami.com/res/img/default/user_infobg.gif) -37px -66px no-repeat;}
+ul.xUser_tabs li.current a.uico_home{ background:url(http://img.xiami.com/res/img/default/user_infobg.gif) -73px -66px no-repeat;}
+
+
+ul.xUser_tabs li.u_more .more_drop{ position:absolute;top:29px; right:1px; background:#fff; border-width:1px; border-color:#e2e2e2; border-style:none solid solid none; z-index:2;}
+
+ul.xUser_tabs li.u_more .more_dropInn{ background:#fff;border-width:1px; border-color:#d5d5d5; border-style:none solid solid none;padding:10px 0 5px 0; width:91px;}
+ul.xUser_tabs li.u_more .more_dropInn a{ display:block; padding-left:10px; height:26px; line-height:26px;}
+
+ul.xUser_tabs li.u_more .more_dropInn a:hover{ text-decoration:none; background:#5297ff; color:#fff;}
+.new_ico{background:url(http://img.xiami.com/res/v3/img/new_ico.gif) no-repeat right -4px;padding-right: 20px;}
+
+
+/*Small icons tips*/
+.vicos{background:url(http://img.xiami.com/res/img/default/verify_ico.gif) 100% 0 no-repeat; padding-right:18px;}
+sup.hot {
+    background:url("data:image/gif;base64,R0lGODlhEwALAJEDAP8AAP////9paf///yH5BAEAAAMALAAAAAATAAsAAAIqnI+pyyggXgTwUYFAoFv3AALZp3EmdnghWSZlyW5uvD2yU+XQIDX+/ysAADs=") 0 0 no-repeat;
+    width:19px;
+    height:11px;
+    position:absolute;
+}
+sup.wow {
+    background:url("http://st.xiami.com/res/img/common/woo.gif") 0 0 no-repeat;
+    width:30px;
+    height:19px;
+    position:absolute;
+    
+}
+
+/*IE6 FIXED BUG*/
+* html a.top_more,
+* html #auto_complete td.result_more li a.top_more,
+* html #auto_complete td.result_more li.selected a.top_more {
+    background-image:url(http://img.xiami.com/res/v3/img/more_arrow.gif);
+}
+
+* html #n_header {
+  background:url("http://img.xiami.com/res/img/default/n_head_ie.gif") repeat-x;
+  height:100px;
+  position:relative;
+  z-index:3;
+}
+* html #page {
+  background:url("http://img.xiami.com/res/img/default/mbg_ie.jpg") top repeat-x #fff;
+}
+* html #page.blue {
+  background:url("http://img.xiami.com/res/v3/img/g_mbg_ie.jpg") repeat-x scroll 0 0 #E0E6E7;
+}
