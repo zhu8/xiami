@@ -1,6 +1,6 @@
 seajs.config({
   alias: {
-    'jquery': '../www/js/lib/jquery.js'
+    'jquery': '../../js/lib/jquery.js'
   },
   preload: ["jquery"]
 });
@@ -9,8 +9,8 @@ seajs.config({
 //   window.jQuery = window.$ = exports
 // })
 
-seajs.use('../www/js/module/head',function(){
+seajs.use('../../js/module/head',function(){
     $(function(){
-        console.log('oops, 全站替换使用有点难度。。。考虑。。。ing。。。:D');
+        console.log('oops');
     });
 });
