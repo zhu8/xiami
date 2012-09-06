@@ -278,7 +278,7 @@ a.unfold {
     z-index:9;
 }
 .header_popup .loading {
-    background:url("http://img.xiami.com/res/img/common/software/slider_load.gif") no-repeat scroll center center transparent;
+    background:url(http://img.xiami.com/res/img/common/software/slider_load.gif) no-repeat scroll center center transparent;
 }
 .recent_inner {
     width:388px;
@@ -415,14 +415,31 @@ a.unfold {
 .xUser_unlog span{ border-left:1px #cacaca dotted; padding-left:11px; margin-left:11px;}
 .xUser_unlog span.log_orginal{ border-left:none;}
 .xUser_unlog span.log_orginal em{ color:#999; font-style:normal; padding:0 8px;}
-.xUser_unlog a.log_icons{ padding:0 0 1px 20px;vertical-align:top;}
+.xUser_unlog .log_icons{ padding:0 0 1px 20px;vertical-align:top;}
 
-a.log_weibo{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 0 no-repeat;}
-a.log_tencent{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -416px no-repeat;}
-a.log_renren{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -64px no-repeat;}
-a.log_msn{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -224px no-repeat;}
-a.log_alipay{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -384px no-repeat;}
-a.log_sdo{ background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) 0 -320px no-repeat;}
+.log_weibo,
+.log_tencent,
+.log_renren,
+.log_msn,
+.log_alipay,
+.log_sdo{
+    background:url(http://img.xiami.com/res/v3/img/sync-ico_v15.gif) no-repeat;
+}
+.log_tencent{ 
+    background-position: 0 -416px;
+}
+.log_renren{ 
+    background-position: 0 -64px;
+}
+.log_msn{ 
+    background-position: 0 -224px;
+}
+.log_alipay{ 
+    background-position: 0 -384px;
+}
+.log_sdo{ 
+    background-position: 0 -320px;
+}
 
 /*ie6 fixed*/
 *html #xUser_info {width:320px;}

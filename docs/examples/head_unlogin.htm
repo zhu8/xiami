@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="../../css/basic/core_mod.css" type="text/css" />
 <link rel="stylesheet" href="../../css/basic/core_btn.css" type="text/css" />
 <link rel="stylesheet" href="../../css/module/head_unlogin.css" type="text/css" />
+
+<script src="../../js/lib/jquery.js?v=1.7.2"></script>
 </head>
 
 <body>
@@ -45,7 +47,7 @@
                 <li><a title="请登录" id="top_login" class="ti" href="/member/login">请登录</a></li>
             </ul>
             
-            <div id="login_popup" class="">
+            <div id="login_popup" class="hidden">
                 <div id="login_form">
                     <form action="/member/login" method="post" id="unlogin_form">
                         <input type="hidden" name="done" value="/">
@@ -73,5 +75,38 @@
             
         </div>
 </div>
+<script>
+
+//临时放页面测试
+$(function(){
+    //隐藏登录弹出层
+    var hideLoginPopup = function(){
+        if (!$("#login_popup").is(".hidden")) {
+            $("#top_login").removeClass("active");
+            $("#login_popup").addClass("hidden");
+        }
+    };
+
+    // 登录框
+    $("#top_login").click(function(){
+        $('#form_reg').find('.invalid').addClass('hidden');
+        $(this).toggleClass("active");
+        if($("#login_popup").hasClass("hidden")){
+            $("#login_popup").removeClass("hidden");
+            $("#log_email").focus();
+        }else{
+            $("#login_popup").addClass("hidden");
+            $("#log_email").blur();
+        };
+        return false;
+    });
+    $("body").click(function(){
+        hideLoginPopup();
+    });
+    $('#login_popup').click(function (e) {
+        e.stopPropagation();
+    });
+});
+</script>
 </body>
 </html>

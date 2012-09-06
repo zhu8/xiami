@@ -26,8 +26,9 @@
     box-shadow:1px 1px 5px rgba(0,0,0,0.5) inset;
 }
 
-.ie .blue_btn4,.ie8 .blue_btn4 {
-    background:url("/res/v3/img/blue_btn_ie.gif") repeat scroll 0 -37px #e3e6e6;
+.ie .blue_btn4,
+.ie8 .blue_btn4 {
+    background:url(http://img.xiami.com/res/v3/img/blue_btn_ie.gif) repeat scroll 0 -37px #e3e6e6;
     color:#fff;
     cursor:pointer;
     display:inline-block;
@@ -41,8 +42,9 @@
 .ie8 .blue_btn4:active {
     background-position:1px -36px;
 }
-.ie .blue_btn2,.ie8 .blue_btn2 {
-    background:url("/res/v3/img/blue_btn_ie.gif") repeat scroll -8px 0 #e3e6e6;
+.ie .blue_btn2,
+.ie8 .blue_btn2 {
+    background:url(http://img.xiami.com/res/v3/img/blue_btn_ie.gif) repeat scroll -8px 0 #e3e6e6;
     color:#fff;
     cursor:pointer;
     display:inline-block;
@@ -85,12 +87,12 @@
 .bt_choose {
     color: #333;
     text-decoration: none;
-    background: url('http://img.xiami.com/res/img/default/goplaybg.gif') 0 -84px no-repeat;
+    background: url(http://img.xiami.com/res/img/default/goplaybg.gif) 0 -84px no-repeat;
     padding-left: 8px;
     cursor: pointer;
 }
 .bt_choose span {
-    background: url('http://img.xiami.com/res/img/default/goplaybg.gif') 100% -84px no-repeat;
+    background: url(http://img.xiami.com/res/img/default/goplaybg.gif) 100% -84px no-repeat;
     float: left;
     height: 21px;
     overflow: hidden;
@@ -106,7 +108,7 @@
 
 /*Style for button*/
 .ie .blue_btn4,.ie8 .blue_btn4 {
-    background:url("http://st.xiami.com/res/v3/img/blue_btn_ie.gif") repeat scroll 0 -37px #e3e6e6;
+    background:url(http://st.xiami.com/res/v3/img/blue_btn_ie.gif) repeat scroll 0 -37px #e3e6e6;
     color:#fff;
     cursor:pointer;
     display:inline-block;
@@ -121,7 +123,7 @@
     background-position:1px -36px;
 }
 .ie .blue_btn2,.ie8 .blue_btn2 {
-    background:url("http://st.xiami.com/res/v3/img/blue_btn_ie.gif") repeat scroll -8px 0 #e3e6e6;
+    background:url(http://st.xiami.com/res/v3/img/blue_btn_ie.gif) repeat scroll -8px 0 #e3e6e6;
     color:#fff;
     cursor:pointer;
     display:inline-block;
@@ -175,7 +177,14 @@
     background:transparent;
     cursor:default;
 }
-.bt_sub2,.bt_sub2:focus,.bt_sub4,.bt_sub4:focus {
+.bt_sub2,
+.bt_sub2:focus,
+.bt_cancle2,
+.bt_cancle2:focus,
+.bt_sub4,
+.bt_sub4:focus,
+.bt_cancle4,
+.bt_cancle4:focus {
     font-size:12px;
     height:21px;
     color:#fff;
@@ -183,34 +192,30 @@
     text-align:center;
     line-height:21px;
     cursor:pointer;
+    background: url(http://img.xiami.com/res/img/default/bg_sprit2.gif) no-repeat;
 }
-.bt_cancle2,.bt_cancle2:focus,.bt_cancle4,.bt_cancle4:focus {
-    font-size:12px;
-    height:21px;
-    color:#333;
-    border:0;
-    text-align:center;
-    line-height:21px;
-    cursor:pointer;
-}
-.bt_sub2,.bt_sub2:focus {
-    background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) 0 -482px no-repeat;
+.bt_sub2,
+.bt_sub2:focus {
+    background-position: 0 -482px;
     width:45px;
 }
-.bt_sub4,.bt_sub4:focus {
-    background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -55px -482px no-repeat;
+.bt_sub4,
+.bt_sub4:focus {
+    background-position: -55px -482px;
     width:63px;
 }
 .bt_cancle2,.bt_cancle2:focus {
-    background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) 0 -524px no-repeat;
+    background-position: 0 -524px;
     width:45px;
 }
 .bt_cancle4,.bt_cancle4:focus {
-    background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -55px -524px no-repeat;
+    background-position: -55px -524px;
+    color:#333;
     width:63px;
 }
 .bt_cancle4w,.bt_cancle4w:focus {
-    background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -196px -536px no-repeat;
+    background-position: -196px -536px;
+    color:#333;
     width:63px;
 }
 @-moz-document url-prefix() {
@@ -218,7 +223,12 @@
         padding-bottom:2px;
     }
 }
-.bt_sub2w,.bt_sub2w:focus,.bt_sub3w,.bt_sub3w:focus,.bt_sub4w,.bt_sub4w:focus {
+.bt_sub2w,
+.bt_sub2w:focus,
+.bt_sub3w,
+.bt_sub3w:focus,
+.bt_sub4w,
+.bt_sub4w:focus {
     height:27px;
     color:#fff;
     border:0;
@@ -229,7 +239,8 @@
     padding-bottom:2px;
     *padding-bottom:0;
 }
-.bt_cancle4w,.bt_cancle4w:focus {
+.bt_cancle4w,
+.bt_cancle4w:focus {
     height:27px;
     color:#999;
     border:0;
@@ -240,15 +251,18 @@
     padding-bottom:2px;
     *padding-bottom:0;
 }
-.bt_sub2w,.bt_sub2w:focus {
+.bt_sub2w,
+.bt_sub2w:focus {
     background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -129px -482px no-repeat;
     width:50px;
 }
-.bt_sub3w,.bt_sub3w:focus {
+.bt_sub3w,
+.bt_sub3w:focus {
     background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -129px -509px no-repeat;
     width:57px;
 }
-.bt_sub4w,.bt_sub4w:focus {
+.bt_sub4w,
+.bt_sub4w:focus {
     background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -129px -536px no-repeat;
     width:67px;
 }
@@ -285,7 +299,9 @@
 .song-digg,
 .song-download,
 .song-toclt,
-.song-tel { 
+.song-tel,
+.song-more,
+.song-down { 
     float:left; 
     *display:inline; 
     width:16px; 
@@ -294,25 +310,21 @@
     overflow:hidden; 
     text-indent:-9999em; 
     margin-left:8px;
+    background-image: url(http://img.xiami.com/res/img/default/song_icon.gif);
+    background-repeat: no-repeat;
 }
 
-.song-play {  
-    background:url(http://img.xiami.com/res/img/default/song_icon.gif) 0 0 no-repeat;
-}
 .song-digg {
-    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -16px 0 no-repeat;
+    background-position: -16px 0;
 }
 .song-toclt { 
-    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -48px 0 no-repeat;
+    background-position: -48px 0;
 }
 .song-download { 
-    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -32px 0 no-repeat;
+    background-position: -32px 0;
 }
 .song-tel {
     background:url(http://img.xiami.com/res/img/default/xmtel.png) 0 0 no-repeat;
-}
-.song-more:hover { 
-    background-position:-105px -17px;
 }
 .song-play:hover { 
     background-position:0 -17px;
@@ -329,11 +341,24 @@
 .song-tel:hover{ 
     background-position:0 -17px;
 }
-.song-more {
-    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -105px 0 no-repeat; 
-    width:35px; 
+.song-more,
+.song-down {
     height:17px;
     display:block; 
     overflow:hidden; 
     text-indent:-9999em;
+}
+.song-more {
+    width:35px; 
+    background-position: -105px 0; 
+}
+.song-more:hover { 
+    background-position:-105px -17px;
+}
+.song-down {
+    width:41px; 
+    background-position: -64px 0; 
+}
+.song-down:hover {
+    background-position: -64px -17px; 
 }
