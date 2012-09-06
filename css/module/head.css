@@ -287,6 +287,10 @@ a.unfold {
     border-top:none;
     background:#fff;
 }
+.recent_inner .bt_play,
+.recent_inner .bt_choose {
+    float: left;
+}
 .recent_inner ul li.sections {
     width:189px;
     float:left;

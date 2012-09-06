@@ -92,7 +92,7 @@ $(function(){
         $('#recent_history, #notifications').addClass('hidden');
         $("#recent_button, #notify_button").removeClass('unfold');
     });
-    /**/
+    
 });
 
 });

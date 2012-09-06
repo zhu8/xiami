@@ -16,17 +16,9 @@
     text-align:center;
 }
 .blue_btn:hover {
-    background:#5d84d1;
-    background:-webkit-gradient(linear,0% 0,0% 100%,from(#649de0),to(#487dd5),color-stop(.5,#4070d0),color-stop(.501,#3467cc));
-    background:-moz-linear-gradient(top,#84aee8,#6891d7 50%,#5d84d1 50.1%,#577bc4);
-    background:linear-gradient(top,#649de0,#487dd5 50%,#4070d0 50.1%,#3467cc);
     border:1px solid #3282d0;
 }
 .blue_btn:active {
-    background:#5d84d1;
-    background:-webkit-gradient(linear,0% 0,0% 100%,from(#649de0),to(#487dd5),color-stop(.5,#4070d0),color-stop(.501,#3467cc));
-    background:-moz-linear-gradient(top,#84aee8,#6891d7 50%,#5d84d1 50.1%,#577bc4);
-    background:linear-gradient(top,#649de0,#487dd5 50%,#4070d0 50.1%,#3467cc);
     border:1px solid transparent;
     -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.5) inset;
     -moz-box-shadow:1px 1px 5px rgba(0,0,0,0.5) inset;
@@ -66,15 +58,14 @@
 }
 
 /*bt_play button*/
-a.bt_play {
+.bt_play {
     color:#333!important;
     text-decoration:none;
     background:url(http://img.xiami.com/res/img/default/goplaybg.gif) 0 0 no-repeat;
-    float:left;
     padding-left:20px;
     cursor:pointer;
 }
-a.bt_play span {
+.bt_play span {
     background:url(http://img.xiami.com/res/img/default/goplaybg.gif) 100% 0 no-repeat;
     float:left;
     height:21px;
@@ -82,24 +73,23 @@ a.bt_play span {
     line-height:21px;
     padding-right:8px;
 }
-a.bt_play:hover {
+.bt_play:hover {
     color:#000;
     background-position: 0 -21px;
 }
-a.bt_play:hover span {
+.bt_play:hover span {
     background-position: 100% -21px;
 }
 
 /*bt_choose button*/
-a.bt_choose {
+.bt_choose {
     color: #333;
     text-decoration: none;
     background: url('http://img.xiami.com/res/img/default/goplaybg.gif') 0 -84px no-repeat;
-    float: left;
     padding-left: 8px;
     cursor: pointer;
 }
-a.bt_choose span {
+.bt_choose span {
     background: url('http://img.xiami.com/res/img/default/goplaybg.gif') 100% -84px no-repeat;
     float: left;
     height: 21px;
@@ -107,10 +97,10 @@ a.bt_choose span {
     line-height: 21px;
     padding-right: 8px;
 }
-a.bt_choose:hover {
+.bt_choose:hover {
     background-position: 0 -105px;
 }
-a.bt_choose:hover span {
+.bt_choose:hover span {
     background-position: 100% -105px;
 }
 
@@ -152,7 +142,7 @@ a.bt_choose:hover span {
     background:linear-gradient(top,#e8e8e8,#e3e3e3 50%,#e0e0e0 50.1%,#dfdfdf);
     border:1px solid #d4d4d4;
 }
-a.bot_more {
+.bot_more {
     background:#f8f8f9;
     background:-webkit-gradient(linear,left top,left bottom,from(#f8f8f9),to(#e6e6e8));
     background:-moz-linear-gradient(top,#f8f8f9,#e6e6e8);
@@ -167,20 +157,20 @@ a.bot_more {
     text-decoration:none!important;
     vertical-align:middle;
 }
-a.bot_more:hover {
+.bot_more:hover {
     background:#e6e6e8;
     background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f5),to(#e6e6e8));
     background:-moz-linear-gradient(top,#f4f4f5,#e6e6e8);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f5',endColorstr='#e6e6e8');
 }
-a.bot_more:active {
+.bot_more:active {
     border:1px solid #aaa;
     background:#fff;
     background:-webkit-gradient(linear,left top,left bottom,from(#ddd),to(#ddd));
     background:-moz-linear-gradient(top,#ddd,#ddd);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD',endColorstr='#DDDDDD');
 }
-a.loading,a.loading:hover,a.loading:active {
+.loading,a.loading:hover,a.loading:active {
     border:1px solid #f0f5f5;
     background:transparent;
     cursor:default;
@@ -261,4 +251,89 @@ a.loading,a.loading:hover,a.loading:active {
 .bt_sub4w,.bt_sub4w:focus {
     background:url(http://img.xiami.com/res/img/default/bg_sprit2.gif) -129px -536px no-repeat;
     width:67px;
+}
+
+/*style for play*/
+.play-w45 { 
+    background:url(http://img.xiami.com/res/img/default/playit.gif) 0 0 no-repeat; 
+    overflow:hidden; 
+    height:45px; 
+    padding:15px 0 14px 50px; 
+    line-height:45px;
+    font-size:14px;
+    color:#666;
+}
+.play-w45:hover {
+    background-position:0 -45px; 
+}
+.play-w22 { 
+    font-size:14px;
+    background:url(http://img.xiami.com/res/img/default/c_play_ie.gif) 0 -2px no-repeat; 
+    *background:url(http://img.xiami.com/res/img/default/c_play_ie.gif) 0 -4px no-repeat; 
+    padding-left:26px; 
+    text-decoration:underline
+}
+
+.play-w22:hover { 
+    background-position:0 -26px;
+    *background-position:0 -27px; 
+    text-decoration:none;
+}
+
+/*song play`digg`download'add'tel button style*/
+.song-play,
+.song-digg,
+.song-download,
+.song-toclt,
+.song-tel { 
+    float:left; 
+    *display:inline; 
+    width:16px; 
+    height:17px; 
+    display:block; 
+    overflow:hidden; 
+    text-indent:-9999em; 
+    margin-left:8px;
+}
+
+.song-play {  
+    background:url(http://img.xiami.com/res/img/default/song_icon.gif) 0 0 no-repeat;
+}
+.song-digg {
+    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -16px 0 no-repeat;
+}
+.song-toclt { 
+    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -48px 0 no-repeat;
+}
+.song-download { 
+    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -32px 0 no-repeat;
+}
+.song-tel {
+    background:url(http://img.xiami.com/res/img/default/xmtel.png) 0 0 no-repeat;
+}
+.song-more:hover { 
+    background-position:-105px -17px;
+}
+.song-play:hover { 
+    background-position:0 -17px;
+}
+.song-digg:hover { 
+    background-position:-16px -17px;
+}
+.song-toclt:hover { 
+    background-position:-48px -17px;
+}
+.song-download:hover { 
+    background-position:-32px -17px;
+}
+.song-tel:hover{ 
+    background-position:0 -17px;
+}
+.song-more {
+    background:url(http://img.xiami.com/res/img/default/song_icon.gif) -105px 0 no-repeat; 
+    width:35px; 
+    height:17px;
+    display:block; 
+    overflow:hidden; 
+    text-indent:-9999em;
 }

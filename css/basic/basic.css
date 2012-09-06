@@ -8,6 +8,9 @@ body {
 textarea {
     font:12px "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+button {
+    border: none;
+}
 a {
     color:#36c;
     cursor:pointer;
@@ -38,8 +41,12 @@ a:link{
 }
 
 /*font `family`*/
-.text {font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif!important;}
-.fYHei {font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,Georgia;}
+.text {
+    font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif!important;
+}
+.fYHei {
+    font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,Georgia;
+}
 
 /*clearfix*/
 .clearfix:before,
