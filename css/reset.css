@@ -1,42 +1,103 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
 body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
 div,
 dl,
 dt,
-dd,
-ul,
-ol,
-li,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-pre,
-code,
-form,
-fieldset,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
 legend,
-input,
-textarea,
-button,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
 p,
-blockquote,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
 th,
-td {
-	margin: 0;
-	padding: 0;
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body {
+  height: 100%;
 }
 
-fieldset,
-img {
-	border: 0;
-}
 
 address,
 caption,
@@ -52,14 +113,20 @@ button,
 input,
 textarea,
 select {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	*font-size: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 100%; /*For IE*/
+}
+
+b,
+strong {
+  font-weight: bold;
 }
 
 li {
 	list-style: none;
+	display: list-item; /*For IE6,7*/
 }
 
 h1,
@@ -70,6 +137,18 @@ h5,
 h6 {
 	font-size: 100%;
 	font-weight: normal;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; /*For IE*/
 }
 
 button,
@@ -85,4 +164,52 @@ input[type="submit"],
 input[type="radio"],
 input[type="checkbox"] {
 	cursor:pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg {
+	overflow: hidden; /* for IE9*/
 }
