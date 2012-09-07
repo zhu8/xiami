@@ -6,6 +6,21 @@ body {
 }
 textarea {
     font:12px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-color:#7c7c7c #ccc #ccc #ddd;
+    border-style:solid;
+    border-width:1px;
+    font-weight:inherit;
+    line-height:1.2;
+    overflow:auto;
+    padding:2px;
+    font-size:12px;
+}
+input[type=text]:focus,
+textarea:focus {
+    border-color:#008de2 #75CBFf #75cbff #95D7FF;
+    border-width:1px;
+    border-style:solid;
+    outline: none;
 }
 button {
     border: none;
