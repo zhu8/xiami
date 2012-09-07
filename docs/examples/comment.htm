@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>dialog module</title>
+<meta name="keyword" content="" />
+<meta name="description" content="" />
+<link href="http://www.xiami.com/favicon.ico" type="image/x-icon" rel="Bookmark"/>
+<link href="http://www.xiami.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+<link rel="stylesheet" href="../../css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../../css/basic/basic.css" type="text/css" />
+<link rel="stylesheet" href="../../css/basic/core_btn.css" type="text/css" />
+<link rel="stylesheet" href="../../css/module/comment.css" type="text/css" />
+<style>
+    body {
+        width: 600px;
+        margin: 30px auto;
+    }
+</style>
+</head>
+
+<body>
+<div id="wall" class="comments_wall mgt30">
+        <h3 class="Ctitle" style="position:relative">我来说两句
+        </h3>
+        <div class="common_sec">
+                        <div class="wall_post clearfix">
+            <form id="post_form" method="post" action="" style="display:block;" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode=='13') this.submit.click();">
+                <div>
+                    <img class="avatar" src="http://img.xiami.com/./images/avatar_new/17/95/897685/897685_1313473319_1.jpg">                    <p class="auto"><textarea id="message_short" name="message" cols="60" rows="6" maxlength="300"></textarea></p>
+                </div>
+                                <p class="act">                    
+                    <span class="type_counts"><em>0</em> / 300</span>
+                    <input name="submit" type="submit" class="bt_sub4w" value="发表评论">                </p>
+            </form>
+        </div>                    
+                        
+                    <div class="hotComment">
+<h3 class="Ctitle">热门评论</h3>
+<ul>
+        <li id="11386299">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/6215042" title="Johnny">  <img src="http://img.xiami.com/./images/avatar_new/124/30/6215042/6215042_1318637756_1.jpg" width="50" height="50" alt="Johnny">  </a></p>
+            <div class="info"> 
+                <span class="author"><a href="/u/6215042" title="Johnny">Johnny</a></span><span class="time">2012-07-17 00:41</span> 
+                
+                                <span><a class="hotrebox" onclick="return false;" rel="brief_2_11386299" href="/commentlist/re/id/11386299/type/3" style="display: inline-block;">回复</a></span>
+                                
+                <span><a href="javascript:;" class="agereebox_11386299" onclick="ageree(11386299,1)" rel="72">赞(72)</a></span>
+                <span><a href="javascript:;" class="disagereebox_11386299" onclick="ageree(11386299,2)" rel="0">弱(0)</a></span>
+                
+                                <span class="report"><a onclick="detail_report(11386299,3)" class="reportbox" href="javascript:;" rel="brief_11386299" style="display: none;">举报</a></span>
+                            </div>
+                        
+            <div class="brief">
+                <div id="brief_2_11386299">今年我有32场全国演唱会！                
+                </div>
+            </div>
+        </div>
+    </li>
+        <li id="11431060">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/2451787" title="JM x 肥逸">  <img src="http://img.xiami.com/./images/avatar_new/49/3/2451787/2451787_1331911981_1.jpg" width="50" height="50" alt="JM x 肥逸">  </a></p>
+            <div class="info"> 
+                <span class="author"><a href="/u/2451787" title="JM x 肥逸">JM x 肥逸</a></span><span class="time">2012-07-20 22:15</span> 
+                
+                                <span><a class="hotrebox" onclick="return false;" rel="brief_2_11431060" href="/commentlist/re/id/11431060/type/3" style="display: inline-block;">回复</a></span>
+                                
+                <span><a href="javascript:;" class="agereebox_11431060" onclick="ageree(11431060,1)" rel="31">赞(31)</a></span>
+                <span><a href="javascript:;" class="disagereebox_11431060" onclick="ageree(11431060,2)" rel="0">弱(0)</a></span>
+                
+                                <span class="report"><a onclick="detail_report(11431060,3)" class="reportbox" href="javascript:;" rel="brief_11431060" style="display: none;">举报</a></span>
+                            </div>
+                        
+            <div class="brief">
+                <div id="brief_2_11431060">别说，还真喜欢上杨坤这人了，就是因为中国好声音                
+                </div>
+            </div>
+        </div>
+    </li>
+        <li id="11415808">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/4322230" title="上淞">  <img src="http://img.xiami.com/./images/avatar_new/86/44/4322230/4322230_1332829850_1.jpg" width="50" height="50" alt="上淞">  </a></p>
+            <div class="info"> 
+                <span class="author"><a href="/u/4322230" title="上淞">上淞</a></span><span class="time">2012-07-19 16:00</span> 
+                
+                                <span><a class="hotrebox" onclick="return false;" rel="brief_2_11415808" href="/commentlist/re/id/11415808/type/3" style="display: inline-block;">回复</a></span>
+                                
+                <span><a href="javascript:;" class="agereebox_11415808" onclick="ageree(11415808,1)" rel="10">赞(10)</a></span>
+                <span><a href="javascript:;" class="disagereebox_11415808" onclick="ageree(11415808,2)" rel="0">弱(0)</a></span>
+                
+                                <span class="report"><a onclick="detail_report(11415808,3)" class="reportbox" href="javascript:;" rel="brief_11415808" style="display: none;">举报</a></span>
+                            </div>
+                        
+            <div class="brief">
+                <div id="brief_2_11415808">杨坤的歌，只能听，不能唱。可以欣赏，却不能自己把玩。                
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+                <div class="wall_list" id="wall_list">
+            <p class="wall_list_count"><span>275</span>条简评</p>
+            <ul>
+        <li id="11928839">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/2448735" title="猥琐留">  <img src="http://img.xiami.com/./images/avatar_new/48/97/2448735/2448735_1336188397_1.jpg" width="50" height="50" alt="猥琐留">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/2448735" title="猥琐留">猥琐留</a></span><span class="time">2012-09-04 20:17</span> 
+                             <span class="act"><a href="/commentlist/re/id/11928839/type/3" class="rebox" rel="brief_11928839" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11928839,3)" class="reportbox" href="javascript:;" rel="brief_11928839" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11928839" onclick="ageree(11928839,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11928839" onclick="ageree(11928839,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11928839">32场 哈哈！
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11910185">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/10478543" title="第二十八頁。。。">  <img src="http://img.xiami.com/./images/avatar/43/10478543/104785431346607811_1.jpg" width="50" height="50" alt="第二十八頁。。。">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/10478543" title="第二十八頁。。。">第二十八頁。。。</a></span><span class="time">2012-09-03 01:53</span> 
+                             <span class="act"><a href="/commentlist/re/id/11910185/type/3" class="rebox" rel="brief_11910185" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11910185,3)" class="reportbox" href="javascript:;" rel="brief_11910185" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11910185" onclick="ageree(11910185,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11910185" onclick="ageree(11910185,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11910185">男人有時也感性。
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11898450">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/3634452" title="深海蝌蚪">  <img src="http://img.xiami.com/./images/avatar_new/72/68/3634452/3634452_1306470851_1.jpg" width="50" height="50" alt="深海蝌蚪">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/3634452" title="深海蝌蚪">深海蝌蚪</a></span><span class="time">2012-09-01 23:44</span> 
+                             <span class="act"><a href="/commentlist/re/id/11898450/type/3" class="rebox" rel="brief_11898450" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11898450,3)" class="reportbox" href="javascript:;" rel="brief_11898450" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11898450" onclick="ageree(11898450,1)" rel="1">赞(1)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11898450" onclick="ageree(11898450,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11898450">牧马人专辑是最棒的一张
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11894506">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/8324349" title="阿亮">  <img src="http://img.xiami.com/./images/avatar_new/166/48/8324349/8324349_1331042961_1.jpg" width="50" height="50" alt="阿亮">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/8324349" title="阿亮">阿亮</a></span><span class="time">2012-09-01 17:48</span> 
+                             <span class="act"><a href="/commentlist/re/id/11894506/type/3" class="rebox" rel="brief_11894506" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11894506,3)" class="reportbox" href="javascript:;" rel="brief_11894506" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11894506" onclick="ageree(11894506,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11894506" onclick="ageree(11894506,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11894506">1111
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11858437">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/7350010" title="罗大佐">  <img src="http://img.xiami.com/./images/avatar_new/147/0/7350010/7350010_1324480969_1.jpg" width="50" height="50" alt="罗大佐">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/7350010" title="罗大佐">罗大佐</a></span><span class="time">2012-08-29 15:39</span> 
+                             <span class="act"><a href="/commentlist/re/id/11858437/type/3" class="rebox" rel="brief_11858437" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11858437,3)" class="reportbox" href="javascript:;" rel="brief_11858437" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11858437" onclick="ageree(11858437,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11858437" onclick="ageree(11858437,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11858437">......
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11826344">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/10380677" title="cctv1微博">  <img src="http://img.xiami.com/res/img/default/usr50.gif" width="50" height="50" alt="cctv1微博">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/10380677" title="cctv1微博">cctv1微博</a></span><span class="time">2012-08-26 22:21</span> 
+                             <span class="act"><a href="/commentlist/re/id/11826344/type/3" class="rebox" rel="brief_11826344" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11826344,3)" class="reportbox" href="javascript:;" rel="brief_11826344" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11826344" onclick="ageree(11826344,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11826344" onclick="ageree(11826344,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11826344">就是好听
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11824960">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/4627987" title="songyang996">  <img src="http://img.xiami.com/./images/avatar_new/92/55/4627987/4627987_1309461164_1.jpg" width="50" height="50" alt="songyang996">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/4627987" title="songyang996">songyang996</a>(来~签个名！哈哈~)</span><span class="time">2012-08-26 20:39</span> 
+                             <span class="act"><a href="/commentlist/re/id/11824960/type/3" class="rebox" rel="brief_11824960" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11824960,3)" class="reportbox" href="javascript:;" rel="brief_11824960" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11824960" onclick="ageree(11824960,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11824960" onclick="ageree(11824960,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11824960">真性情的坤哥！蛮喜欢他的。歌曲真的很不错。
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11822640">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/6571343" title="インビジブル.">  <img src="http://img.xiami.com/./images/avatar_new/131/42/6571343/6571343_1338275591_1.jpg" width="50" height="50" alt="インビジブル.">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/6571343" title="インビジブル.">インビジブル.</a></span><span class="time">2012-08-26 16:48</span> 
+                             <span class="act"><a href="/commentlist/re/id/11822640/type/3" class="rebox" rel="brief_11822640" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11822640,3)" class="reportbox" href="javascript:;" rel="brief_11822640" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11822640" onclick="ageree(11822640,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11822640" onclick="ageree(11822640,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11822640">3232323232!\ ^ v ^ /
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11810693">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/7714761" title="青花瓷558">  <img src="http://img.xiami.com/./images/avatar_new/154/29/7714761/7714761_1326854782_1.jpg" width="50" height="50" alt="青花瓷558">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/7714761" title="青花瓷558">青花瓷558</a></span><span class="time">2012-08-25 15:38</span> 
+                             <span class="act"><a href="/commentlist/re/id/11810693/type/3" class="rebox" rel="brief_11810693" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11810693,3)" class="reportbox" href="javascript:;" rel="brief_11810693" style="display:none">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11810693" onclick="ageree(11810693,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11810693" onclick="ageree(11810693,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11810693">悲情王子，真爽！
+                                </div>
+                 </div>
+        </div>
+    </li>
+        <li id="11794390">
+        <div class="post_item">
+            <p class="usr_cover"><a class="personalDropDown" href="/u/10337567" title="grace">  <img src="http://img.xiami.com/res/img/default/usr50.gif" width="50" height="50" alt="grace">  </a></p>
+            <div class="info"> <span class="author"><a href="/u/10337567" title="grace">grace</a></span><span class="time">2012-08-24 08:49</span> 
+                             <span class="act"><a href="/commentlist/re/id/11794390/type/3" class="rebox" rel="brief_11794390" title="" onclick="return false;">回复</a></span>                 
+                                                <span class="report"><a onclick="detail_report(11794390,3)" class="reportbox" href="javascript:;" rel="brief_11794390" style="display: none;">举报</a></span>
+                                                
+             
+                                <span class="ageree"><a href="javascript:;" class="agereebox_11794390" onclick="ageree(11794390,1)" rel="0">赞(0)</a></span>
+                <span class="disageree"><a href="javascript:;" class="disagereebox_11794390" onclick="ageree(11794390,2)" rel="0">弱(0)</a></span>
+                    
+            </div>
+            <div class="brief">
+                <div id="brief_11794390">灵魂歌者 喜欢你 我发现我慢慢长大
+                                </div>
+                 </div>
+        </div>
+    </li>
+    </ul>
+<div class="all_page"><a class="p_num p_curpage">1</a><a href="javascript:;" class="p_num">2</a><a href="javascript:;" class="p_num">3</a><a href="javascript:;" class="p_num">4</a><a href="javascript:;" class="p_num">5</a><a href="javascript:;" class="p_num">6</a><a href="javascript:;" class="p_num">7</a><a href="javascript:;" class="p_num">8</a><a href="javascript:;" class="p_num">…</a><a href="javascript:;" class="p_num">26</a> <a class="p_redirect_l" href="javascript:;">下一页</a> <span>(第1页)</span></div>        </div>
+            </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+#track table.track_list{ }
+table.track_list{ font-size:12px; width:100%;}
+table.track_list thead{ border-bottom:1px #e5e5e5 solid;}
+table.track_list thead tr{border-bottom:2px solid #F5F5F5;}
+table.track_list thead th{font-weight:normal; padding:0 0 6px; color:#999999}
+table.track_list thead th.song_name{padding-left:5px;}
+table.track_list thead th.song_price{}
+table.track_list thead th.player_via{text-align:center}
+table.track_list thead th.song_act{text-align:center}
+table.track_list td{ border-bottom:1px #ebebeb solid; padding:6px 0; *padding:5px 0;}
+table.track_list .show_zhcn{ color:#999; display:block; margin:3px 0;}
+
+table.track_list td.chkbox{ width:20px; vertical-align:middle; text-align:center;}
+table.track_list td.trackid{ text-align:center; color:#999; width:20px;}
+table.track_list td.song_name{ color:#666; width:200px; padding:0 5px; *padding:2px 5px 0 5px;}
+table.track_list td.song_name span,table.track_list td.song_name span a{ color:#999; padding-left:3px;}
+table.track_list td.song_name a.artist_name{ color:#8CA6D7;}
+table.track_list td.song_price{width:78px; padding:0 5px 0 0; color:#999999;}
+table.track_list td.song_price del{color:#cccccc;}
+table.track_list td.song_price ins{color:#fb4e66; padding-left:1px; text-decoration:none;}
+table.track_list td.song_hot{color:#999; font-size:0.9em; width:30px; padding-right:5px; text-align:right;}
+table.track_list td.song_hot_bar{ width:auto;} 
+table.track_list td.song_hot_bar span{float:left; height:16px; display:inline; background:#eee; }
+table.track_list td.player_via{ font-size:11px; color:#bbb;}
+table.track_list td.track_time{ text-align:right; color:#999; font-family:PMingLiU; font-size:11px;}
+table.track_list td.private_act{ padding-left:10px; width:5%;}
+
+table.track_list td.song_act{ width:180px;}
+
+.song_do{margin-left:8px; _margin:0;}
+.song_do .song_menu{ position:relative; float:left; *display:inline; z-index:5;}
+
+.song_do .song_menu span.song_menu_drop{ position:absolute; top:15px; left:-69px; background:#f0f0f0;  border:1px #d6d6d6 solid; padding:2px 5px; display:none;}
+.song_do .song_menu span.song_menu_drop a{display:block; border-bottom:1px #d8d8d8 solid; line-height:2; width:100px;text-align:left;}
+.song_do .song_menu span.song_menu_drop a:hover{}
+.song_do .song_menu span.song_menu_drop a.toplayer{ border:none;}
+.song_do .song_menu span.song_menu_drop em{ width:33px; height:1px; _overflow:hidden; display:block; background:#f0f0f0; position:relative; top:-3px; left:72px;}

@@ -1,0 +1,147 @@
+textarea {
+    border-color:#7c7c7c #ccc #ccc #ddd;
+    border-style:solid;
+    border-width:1px;
+    font-weight:inherit;
+    line-height:1.2;
+    overflow:auto;
+    padding:2px;
+    font-size:12px;
+}
+input[type=text]:focus,
+textarea:focus {
+    border-color:#008de2 #75CBFf #75cbff #95D7FF;
+    border-width:1px;
+    border-style:solid;
+    outline: none;
+}
+.ie_hover{ border-color:#008DE2 #75CBFF #75CBFF #95D7FF;border-width:1px; border-style:solid; }
+.ie_focus{ border-color:#008DE2 #75CBFF #75CBFF #95D7FF;border-width:1px; border-style:solid; } 
+
+#wall .all_page{ padding-left:0;}
+textarea{border-color:#7C7C7C #ccc #ccc #ddd;border-style:solid;border-width:1px;  font-weight:inherit;line-height:1.2; overflow:auto; padding:2px; font-size:12px;}
+select{border-color:#7C7C7C #ccc #ccc #ddd;border-style:solid;border-width:1px; font-weight:inherit; line-height:1.2; overflow:auto; height:22px;*height:21px;padding:1px 1px 1px 0;-moz-box-sizing:padding-box;}
+
+.comments_wall{clear:both;}
+        .comments_wall h3{border-bottom:none !important;font-size:14px;line-height:30px;color:#F60 !important;font-weight:700;}
+            .comments_wall img{float:left;}
+            .comments_wall .auto{margin-left:60px;}
+            .comments_wall textarea{width:98.5% !important;height:100px;}
+
+/*hot comment*/
+.hotComment{background: #FFFCFB;margin-top: 10px;padding: 2px 10px;border: #FBD0B2 1px solid;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+.hotComment ul{background:#fff;}
+.hotComment h3.Ctitle{border-bottom:#FBD0B2 1px solid !important;margin-bottom: 10px;}
+
+
+.wall_post{ background:#f9f9f9; padding:10px;}
+.artist_wall .wall_post p textarea{ width:99%;}
+.comments_wall .wall_post p textarea{ width:99%;}
+.photo_wall .wall_post p textarea{ width:642px;}
+.col_780_white .wall_post p textarea{ width:710px;}
+.wall_post p.act{ float:right; margin-top:10px;}
+.wall_post p.act span.type_counts{ font-size:14px; color:#999; margin-right:20px;}
+
+.wall_post_album{ background:#f9f9f9; padding:10px;}
+.wall_post_album p{ float:left;}
+.wall_post_album p textarea{ width:550px; height:50px;}
+.wall_post_album p.act{ margin-left:8px;}
+.wall_post_album p.act span.type_counts{ font-size:14px; color:#999; display:block; margin:10px 0 0 5px;*margin:10px 0 0 10px;}
+
+.a_wall_unlog{ background:#f9f9f9; margin-bottom:10px; font-size:12px; padding:10px; }
+.a_wall_unlog strong{ display:block; line-height:2; color:#333;}
+.a_wall_unlog a{ color:#f60; font-weight:bold;}
+.a_wall_unlog span{ color:#999;}
+
+.wall_list p.wall_list_count{ font-size:12px; color:#999; line-height:2;}
+.wall_list ul li{ margin-top:10px;}
+
+.wall_item{ font-size:12px; position:relative;padding-left:60px;min-height:60px;_height:60px;*zoom:1;}
+.wall_item a.buddy{ width:50px; height:50px; position:absolute; top:0; left:0;}
+
+.wall_item:after,.wall_item .info:after{content:"";display:block;height:0;overflow:hidden;visibility:hidden;clear:both;}
+
+.wall_item .info{ height:24px; line-height:24px; padding:0 5px; font-size:12px; background:#fafafa; border-bottom:1px #ececec solid; border-top:1px #d9d9d9 solid; overflow:hidden; *zoom:1;}
+.wall_item .info span{  float:left; margin-right:8px;}
+.wall_item .info .author{ color:#666;}
+.wall_item .info .author a{ padding-right:3px;}
+.wall_item .info .time{ color:#999;}
+.wall_item .info .reply,.wall_item .info .edit{ *padding-top:2px;}
+
+
+.wall_item .info span.delete{ float:right; margin-top:6px;}
+.wall_item .info span.floor{ color:#999; float:right;}
+.wall_item .info .delete a{background:url(http://img.xiami.com/res/img/default/close.gif) 0 -26px no-repeat; display:block; overflow:hidden; width:13px; height:13px; text-indent:-999em;}
+.wall_item .info .delete a:hover{ background-position:0 -13px;}
+
+
+.wall_item .brief{ font-size:12px; color:#333; line-height:1.5; padding:5px 0 0 2px;word-break:break-all; word-wrap:break-word; overflow:hidden;*zoom:1;}
+.wall_item .brief .wall_item{ margin-top:15px;}
+.wall_item .brief .wall_item .info{ border-top:0;}
+
+/*post_item*/
+.dummy{ font-size:12px; padding:3px 0 3px 60px; background:#f5f5f5; border:1px #ebebeb solid; color:#666;}
+.post_item{  margin-bottom:10px; overflow:hidden; *zoom:1;}
+.post_item p.usr_cover{ width:50px; height:50px; float:left; margin-right:5px;}
+.post_item .info,.mini_post_item .info{position:relative; height:22px; line-height:22px; padding:0 5px; font-size:12px; background:#f5f5f5; border-bottom:1px #ebebeb solid; border-top:1px #d9d9d9 solid; overflow:hidden; *zoom:1;}
+.post_item .info span{  /*float:left;*/ margin-right:8px;}
+.post_item .info .author{ color:#666;}
+.post_item .info .author a{ padding-right:3px;}
+.post_item .info .time{ color:#999;}
+.post_item .info .act,.post_item .info .edit{ *padding-top:2px;}
+
+.post_item .info span.report{position:absolute;right:114px;}
+.post_item .info span.ageree{position:absolute;right:66px;}
+.post_item .info span.disageree{position:absolute;right:20px;}
+
+
+.post_item .info span.delete{ float:right; margin-top:4px;}
+.post_item .info span.floor{ color:#999; float:right;}
+.post_item .info .delete a{background:url(http://img.xiami.com/res/img/default/close.gif) 0 -26px no-repeat; display:block; overflow:hidden; width:13px; height:13px; text-indent:-999em;}
+.post_item .info .delete a:hover{ background-position:0 -13px;}
+
+.post_item .brief{ font-size:12px; color:#333; line-height:1.5; padding:5px 0 0 2px;word-break:break-all; word-wrap:break-word; overflow:hidden;*zoom:1;}
+.post_item .brief .post_item{ margin-top:15px;}
+.post_item .brief .post_item .info{ border-top:0;}
+
+
+.post_item_editbox h5{color:#666; font-weight:normal; font-size:12px; margin-top:5px;}
+.post_item_editbox p{ margin-bottom:5px;}
+
+.post_item .acts{ color:#999; overflow:hidden; zoom:1; margin:5px 0; text-align:right; line-height:25px;}
+.post_item .acts em{ font-size:12px; font-style:normal; margin-left:5px;}
+.post_item .admin_acts{ font-size:12px; line-height:25px; margin:20px 0 0 55px; }
+.post_item .admin_acts a{ color:#999; padding-left:16px; margin-right:5px;}
+.post_item .admin_acts a:hover{ color:#f00;}
+.post_item .admin_acts a.bt_top{background:url(http://img.xiami.com/res/img/default/icons.gif) 0 -670px no-repeat; *background:url(http://img.xiami.com/res/img/default/icons.gif) 0 -672px no-repeat;}
+.post_item .admin_acts a.bt_top:hover{ background-position:0 -640px; *background-position:0 -642px;}
+
+.post_item .admin_acts a.bt_edit{background:url(http://img.xiami.com/res/img/default/icons.gif) 0 -354px no-repeat; }
+.post_item .admin_acts a.bt_edit:hover{ background-position:0 -402px; }
+
+.post_item .admin_acts a.balloon{background:url(http://img.xiami.com/res/img/default/icons.gif) 0 -1200px no-repeat; }
+.post_item .admin_acts a.balloon:hover{ background-position:0 -1168px; }
+
+.post_item .admin_acts a.shank{background:url(http://img.xiami.com/res/img/default/icons.gif) 0 -1138px no-repeat;}
+.post_item .admin_acts a.shank:hover{ background-position:0 -1106px; }
+.post_item .brief_quotes{ width:420px; word-break:break-all; overflow:hidden; color:#888; padding-left:18px;background:url(http://img.xiami.com/res/img/default/quote_l.gif) 0 3px no-repeat; line-height:1.6; margin:5px 0; }
+.post_item .brief_quotes q{ padding-right:18px; background:url(http://img.xiami.com/res/img/default/quote_r.gif) 100% 100% no-repeat; *zoom:1;}
+
+.post_item_notice{ font-size:12px; background:#FFF8CC; border-top:1px #EBAD7D solid; border-bottom:1px #EBAD7D solid; color:#666; line-height:2; *padding-top:3px; text-indent:1em; margin-bottom:15px;}
+
+span.c_clew{ color:#999; font-size:12px; padding-left:10px;}
+
+
+/*page*/
+.all_page a.p_num{padding:3px 5px;display:block;border:1px solid #ccc; float:left;margin-right:10px;font-size:12px; display:inline;}
+.all_page a.p_curpage{background:#f1f1f1;color:#999; cursor:default; font-weight:bold;}
+
+.all_page a.p_num:hover{background:#f60; border:1px solid #ddd; text-decoration:none; color:#fff;}
+.all_page a.p_redirect{ border:1px #ccc solid; font-size:12px; padding:3px 5px 3px 10px; float:left; background:url(http://img.xiami.com/res/img/default/page_icon.gif) -4px -26px no-repeat; margin-right:10px;}
+* html .all_page a.p_redirect{ padding:4px 5px 3px 10px;}
+*+html .all_page a.p_redirect{ padding:4px 5px 3px 10px;}
+.all_page a.p_redirect_l{ border:1px #ccc solid; font-size:12px; float:left;  padding:3px 10px 3px 5px; background:url(http://img.xiami.com/res/img/default/page_icon.gif) -5px 0 no-repeat;}
+* html .all_page a.p_redirect_l{ padding:4px 10px 3px 5px;}
+*+html .all_page a.p_redirect_l{ padding:4px 10px 3px 5px;}
+
+.all_page span{color:#999;line-height:23px;font-size:12px;margin-left:10px;}
