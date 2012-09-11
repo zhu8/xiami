@@ -10,7 +10,5 @@ seajs.config({
 // })
 
 seajs.use('../../js/module/head',function(){
-    $(function(){
-        console.log('oops');
-    });
+    console.log('oops');
 });

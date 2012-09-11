@@ -1,31 +1,30 @@
-#track table.track_list{ }
-table.track_list{ font-size:12px; width:100%;}
-table.track_list thead{ border-bottom:1px #e5e5e5 solid;}
-table.track_list thead tr{border-bottom:2px solid #F5F5F5;}
-table.track_list thead th{font-weight:normal; padding:0 0 6px; color:#999999}
-table.track_list thead th.song_name{padding-left:5px;}
-table.track_list thead th.song_price{}
-table.track_list thead th.player_via{text-align:center}
-table.track_list thead th.song_act{text-align:center}
-table.track_list td{ border-bottom:1px #ebebeb solid; padding:6px 0; *padding:5px 0;}
-table.track_list .show_zhcn{ color:#999; display:block; margin:3px 0;}
+.track_list{ font-size:12px; width:100%;}
+.track_list thead{ border-bottom:1px #e5e5e5 solid;}
+.track_list thead tr{border-bottom:2px solid #F5F5F5;}
+.track_list thead th{font-weight:normal; padding:0 0 6px; color:#999999}
+.track_list thead th.song_name{padding-left:5px;}
+.track_list thead th.song_price{}
+.track_list thead th.player_via{text-align:center}
+.track_list thead th.song_act{text-align:center}
+.track_list { border-bottom:1px #ebebeb solid; padding:6px 0; *padding:5px 0;}
+.track_list .show_zhcn{ color:#999; display:block; margin:3px 0;}
 
-table.track_list td.chkbox{ width:20px; vertical-align:middle; text-align:center;}
-table.track_list td.trackid{ text-align:center; color:#999; width:20px;}
-table.track_list td.song_name{ color:#666; width:200px; padding:0 5px; *padding:2px 5px 0 5px;}
-table.track_list td.song_name span,table.track_list td.song_name span a{ color:#999; padding-left:3px;}
-table.track_list td.song_name a.artist_name{ color:#8CA6D7;}
-table.track_list td.song_price{width:78px; padding:0 5px 0 0; color:#999999;}
-table.track_list td.song_price del{color:#cccccc;}
-table.track_list td.song_price ins{color:#fb4e66; padding-left:1px; text-decoration:none;}
-table.track_list td.song_hot{color:#999; font-size:0.9em; width:30px; padding-right:5px; text-align:right;}
-table.track_list td.song_hot_bar{ width:auto;} 
-table.track_list td.song_hot_bar span{float:left; height:16px; display:inline; background:#eee; }
-table.track_list td.player_via{ font-size:11px; color:#bbb;}
-table.track_list td.track_time{ text-align:right; color:#999; font-family:PMingLiU; font-size:11px;}
-table.track_list td.private_act{ padding-left:10px; width:5%;}
+.track_list .chkbox{ width:20px; vertical-align:middle; text-align:center;}
+.track_list .trackid{ text-align:center; color:#999; width:20px;}
+.track_list .song_name{ color:#666; width:200px; padding:0 5px; *padding:2px 5px 0 5px;}
+.track_list .song_name span,.track_list .song_name span a{ color:#999; padding-left:3px;}
+.track_list .song_name a.artist_name{ color:#8CA6D7;}
+.track_list .song_price{width:78px; padding:0 5px 0 0; color:#999999;}
+.track_list .song_price del{color:#cccccc;}
+.track_list .song_price ins{color:#fb4e66; padding-left:1px; text-decoration:none;}
+.track_list .song_hot{color:#999; font-size:0.9em; width:30px; padding-right:5px; text-align:right;}
+.track_list .song_hot_bar{ width:auto;} 
+.track_list .song_hot_bar span{float:left; height:16px; display:inline; background:#eee; }
+.track_list .player_via{ font-size:11px; color:#bbb;}
+.track_list .track_time{ text-align:right; color:#999; font-family:PMingLiU; font-size:11px;}
+.track_list .private_act{ padding-left:10px; width:5%;}
 
-table.track_list td.song_act{ width:180px;}
+.track_list .song_act{ width:180px;}
 
 .song_do{margin-left:8px; _margin:0;}
 .song_do .song_menu{ position:relative; float:left; *display:inline; z-index:5;}

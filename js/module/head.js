@@ -1,7 +1,6 @@
 
 define(function(require, exports, module) {
 //var $ = require('jquery');
-$(function(){
     // 最近播放
     $("#recent_button").click(function(e){
         e.preventDefault();
@@ -92,7 +91,5 @@ $(function(){
         $('#recent_history, #notifications').addClass('hidden');
         $("#recent_button, #notify_button").removeClass('unfold');
     });
-    
-});
 
 });
