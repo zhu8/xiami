@@ -1,3 +1,6 @@
+/*
+    'JS Init'
+*/
 seajs.config({
   alias: {
     'jquery': '../../js/lib/jquery.js'

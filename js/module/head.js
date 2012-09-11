@@ -1,4 +1,6 @@
-
+/*
+    'Header Module JS'
+*/
 define(function(require, exports, module) {
 //var $ = require('jquery');
     // 最近播放
