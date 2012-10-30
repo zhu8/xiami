@@ -1,0 +1,25 @@
+.addStatuTip{
+	border-radius:3px;
+	box-shadow:0 2px 0 rgba(0,0,0,0.1);
+	width:130px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:12px;
+
+}
+.addStatuSec{
+	border:1px solid #99cc66;
+	background-color:#edfcda;
+	color:#333333;
+}
+.addStatuErr{
+	border:1px solid #dd5554;
+	background-color:#ffecec;
+	color:#e25756;
+}
+.addStatuPlay{
+	border:1px solid #ecbb95;
+	background-color:#f4edd1;
+	color:#333333;
+}
