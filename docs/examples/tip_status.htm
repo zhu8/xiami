@@ -13,6 +13,91 @@
 </head>
 
 <body>
+	<div id="player_block">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="160" height="100" id="sdtos_2">
+				<param name="movie" value="sdtos_2.swf?v=1313" />
+				<param name="quality" value="high" />
+				<param name="wmode" value="Opaque">
+				<embed src="sdtos_2.swf?v=1313" width="160" height="100" quality="high" wmode="Opaque" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" name="sdtos_2" />
+			</object>
+		</div>
+	<input type="text" id="url" value="/song/playlist/id/1770979813/object_name/default/object_id/0" />
+	<button id="add">添加歌曲</button>
+	<script>
+		function thisMovie(movieName) {
+			return window.document[movieName] || document.getElementById(movieName);
+		}
+		
+		var playerDialog;
+		function openMusicPlayer(str){
+			playerDialog = window.open("http://192.168.5.117:1024/flash/demo/xiamiMusicPlayer/xiamiMusicPlayer.html?url="+str,"xiamiMusicPlayer",'width=754,height=656');
+		}
+		
+		document.getElementById("add").onclick = function(){
+			var url = document.getElementById("url").value
+			var b = thisMovie("sdtos_2");
+			b.addSongs("http://dev.xiami.com"+url);
+			
+		}
+		/**=========== 提示状态 ================**/
+		function connAddPlaysong(){
+			addStatusFunc(1);
+		}
+		
+		function connAddListError(){
+			addStatusFunc(0);
+		}
+			
+		function connAddListSuc(type){
+			switch(type){
+				case 1:
+					addStatusFunc(1);
+					break;
+				case 2:
+				case 3:
+					addStatusFunc(2);
+					break;
+			}
+		}
+		function connOpenPlayer(){
+			addStatusFunc(3);
+		}
 
+		function addStatusFunc(type){	// 0.添加失败 1.正在播放 2.成功添加至播放列表  3 已打开播放列表
+			var div = $("<div class='addStatuTip'></div>");
+			var st = $(document).scrollTop(),
+				bw = $(document).width();
+			switch(type){
+				case 0:
+					div.html("添加失败");
+					div.addClass("addStatuErr");
+					break;
+				case 1:
+					div.html("正在播放");
+					div.addClass("addStatuPlay");
+					break;
+				case 2:
+					div.html("成功添加至播放列表");
+					div.addClass("addStatuSec");
+					break;
+				case 3:
+					div.html("已打开播放列表");
+					div.addClass("addStatuPlay");
+					break;
+			}
+			if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+				div.css({"position":"absolute","top":st+"px","left":bw/2-66+"px"});
+			}else{
+				div.css({"position":"fixed","top":"0px","left":bw/2-66+"px"});
+			}
+			if($(".addStatuTip").size() > 0){
+				$(".addStatuTip").remove();
+			}
+			div.appendTo('body');
+			setTimeout(function(){
+				div.animate({"opacity":0},500,function(){div.remove();});
+			},500)
+		}
+	</script>
 </body>
 </html>
